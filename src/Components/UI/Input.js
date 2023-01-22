@@ -1,14 +1,14 @@
 import React from "react";
 
-function Input(props) {
+const Input = React.forwardRef((props, ref) => {
   return (
     <div className="mb-2">
       <label className="m-4 font-bold" htmlFor={props.input.id}>
         {props.label}
       </label>
-      <input {...props.input}></input>
+      <input ref={ref} {...props.input}></input>
     </div>
   );
-}
+});
 
 export default Input;
