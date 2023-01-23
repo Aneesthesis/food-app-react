@@ -5,9 +5,9 @@ const CartItem = (props) => {
 
   return (
     <li className="cart-item flex justify-between  mt-6 mb-2 space-y-4 font-bold border-b-[1px] border-black">
-      <div className="flex flex-col items-center justify-start">
+      <div className="flex flex-col justify-start">
         <h2>{props.name}</h2>
-        <div className="summary flex justify-between pb-3 pt-1 space-x-4">
+        <div className="summary flex justify-between pb-3 pt-1 space-x-4 w-[30%]">
           <span className="price text-red-700">{price}</span>
           <span className="amount text-sm font-md border-[1px] border-red-700 rounded-full px-[3px]">{`×${props.amount}`}</span>
         </div>
